@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FMF</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="css/grids-min.css">
+	<link rel="stylesheet" type="text/css" href="css/jClocksGMT.css">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.rotate.js"></script>
+	<script src="js/jClocksGMT.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/init.js"></script>
+</head>	
+<body>
+	<div class="wrap">
+		<div class="container">
+			<header class="header">
+	        	<a href="index.html">
+	        		<img src="img/logo.png" class="logo left" alt="Logo">
+	        	</a>
+	        	<div class="lang-switch left">
+	        		<a href="" class="lang-active">рус</a>
+	        		<a href="">eng</a>
+	        	</div>
+	        	<div class="login right">
+	        		<img src="../img/icons/key.png" alt="login" class="login__ico">
+	        		<a href="" class="login__link">Вход для инвесторов</a>
+	        	</div>
+		        <nav class="nav">
+		            <ul class="nav__list dropdown">
+		                <li class="nav__item">
+		                    <a class="nav__link" href="index.html">О нас</a>
+		                </li>
+		                <li class="nav__item">
+		                    <a class="nav__link" href="invest-strategy.html">инвестиционная стратегия</a>
+		                    <ul class="sub_menu">
+		                    	<li>
+		                    		<a href="invest-strategy-mez.html" class="sub_menu__link">Мезонинное финансирование</a>
+		                    	</li>
+		                    	<li>
+		                    		<a href="invest-strategy-direct-invest.html" class="sub_menu__link">Прямые инвестиции</a>
+		                    	</li>
+		                    </ul>
+		                </li>
+		                <li class="nav__item">
+		                    <a class="nav__link menu-active" href="clients.html">клиентам</a>
+		                </li>
+		                <li class="nav__item">
+		                    <a class="nav__link" href="investors.html">инвесторам</a>
+		                </li>
+		                <li class="nav__item">
+		                    <a class="nav__link" href="contacts.html">контакты</a>
+		                    <ul class="sub_menu">
+		                    	<li>
+		                    		<a href="contact-info.html" class="sub_menu__link">Контактная информация</a>
+		                    	</li>
+		                    	<li>
+		                    		<a href="contact-vacancies.html" class="sub_menu__link">Вакансии</a>
+		                    	</li>
+		                    </ul>
+		                </li>
+		            </ul>
+		        </nav>
+		    </header>
+			<div class="pure-g-r">
+				<div class="pure-u-16-24">
+					<img src="img/content/clients.png" alt="">
+					<p class="p-bordered">Если Ваша компания соответствует требованиям инвестиционной стратегии нашего фонда и у Вас есть перспективный проект, требующий инвестиций, пожалуйста, воспользуйтесь формой слева, чтобы направить нам его на рассмотрение, либо обратитесь по нашим контактам.</p>
+					<ul class="list list_bordered">
+						<h1 class="list__heading">Мы финансируем практически все виды сделок, включая:</h1>
+						<li class="list__item">Покупка компании стратегическим инвестором</li>
+						<li class="list__item">Выкуп одного из акционеров компании</li>
+						<li class="list__item">Выкуп компании менеджментом</li>
+						<li class="list__item">Выкуп компании совместно с фондом прямых инвестиций</li>
+						<li class="list__item">Слияние и поглощение компаний</li>
+						<li class="list__item">Проектное финансирование</li>
+						<li class="list__item">Финансирование инвестиционной программы</li>
+						<li class="list__item">Пополнение оборотного капитала</li>
+						<li class="list__item">Ломбардное финансирование</li>
+					</ul>
+					<ul class="list list_bordered">
+						<h1 class="list__heading">В отличие от банков:</h1>
+						<li class="list__item">Мы гораздо быстрее принимаем решение об инвестировании при минимальном объеме необходимой информации</li>
+						<li class="list__item">Как партнеры по бизнесу, мы более гибко подходим к решению таких вопросов как реструктуризация холдинга, привлечение новых заимствований, смена менеджмента или выкуп одного из акционеров</li>
+					</ul>
+					<ul class="list list_bordered">
+						<h1 class="list__heading">В отличие от банков:</h1>
+						<li class="list__item">Мы не реализуем агрессивную стратегию роста, в том числе в сделках прямых инвестиций, чтобы по выходу из проекта получить желаемую доходность. Мы даем возможность компании развиваться в соответствии со стратегией и видением собственников.</li>
+						<li class="list__item">В любой сделке мы можем предусмотреть наличие опциона колл, который позволит выкупить собственникам свою долю у фонда с доходностью не выше, но и не ниже доходности, согласованной заранее.</li>
+					</ul>
+				</div>
+				<div class="pure-u-8-24 padding-left-3">
+					<div class="world-time">
+						<h1 class="world-time__heading">Мировое время</h1>
+						<div id="clock_london" class="clock_container">
+							<div class="clockHolder">
+								<div class="rotatingWrapper">
+									<img class="hour" src="img/clock/clock_hour.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="min" src="img/clock/clock_min.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="sec" src="img/clock/clock_sec.png">
+								</div>
+								<img class="clock" src="img/clock/clock_face.png" />
+							</div>
+							<div class="lbl">лондон</div>
+						</div>
+						<div id="clock_ny" class="clock_container">
+							<div class="clockHolder">
+								<div class="rotatingWrapper">
+									<img class="hour" src="img/clock/clock_hour.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="min" src="img/clock/clock_min.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="sec" src="img/clock/clock_sec.png">
+								</div>
+								<img class="clock" src="img/clock/clock_face.png" />
+							</div>
+							<div class="lbl">нью-йорк</div>
+						</div>
+						<div id="clock_msk" class="clock_container">
+							<div class="clockHolder">
+								<div class="rotatingWrapper">
+									<img class="hour" src="img/clock/clock_hour.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="min" src="img/clock/clock_min.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="sec" src="img/clock/clock_sec.png">
+								</div>
+								<img class="clock" src="img/clock/clock_face.png" />
+							</div>
+							<div class="lbl">москва</div>
+						</div>
+						<div id="clock_honkong" class="clock_container">
+							<div class="clockHolder">
+								<div class="rotatingWrapper">
+									<img class="hour" src="img/clock/clock_hour.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="min" src="img/clock/clock_min.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="sec" src="img/clock/clock_sec.png">
+								</div>
+								<img class="clock" src="img/clock/clock_face.png" />
+							</div>
+							<div class="lbl">гонконг</div>
+						</div>
+					</div>
+					<div class="banner">
+						<div class="banner__img"></div>
+						<p>Узнайте больше о мезонинном финансировании</p>
+						<a href="more.html" class="btn">узнать</a>
+					</div>
+					<form action="" class="form">
+						<fieldset class="fieldset">
+							<label for="contact" class="label">Контактное лицо:</label>
+							<input type="text" class="input" id="contact">
+							<label for="phone" class="label">Телефон:</label>
+							<input type="text" class="input" id="phone">
+							<label for="email" class="label">e-mail:</label>
+							<input type="text" class="input" id="email">
+							<label for="message" class="label">Сообщение:</label>
+							<textarea rows="5" type="text" class="textarea" id="message"></textarea>
+						</fieldset>
+						<small class="small">Все поля обязательны к заполнению</small>
+						<input type="submit" class="btn right">
+					</form>
+				</div>
+			</div>
+			<footer class="footer">
+				<p class="cred">All rights reserved &copy; 2013 FMF</p>
+				<a href="#" class="footer__link">Условия использования информации, размещённой на сайте</a>
+				<a href="#" class="footer__link">Ограничение ответственности</a>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

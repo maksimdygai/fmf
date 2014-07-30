@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FMF</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="css/grids-min.css">
+	<link rel="stylesheet" type="text/css" href="css/jClocksGMT.css">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.rotate.js"></script>
+	<script src="js/jClocksGMT.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/init.js"></script>
+</head>	
+<body>
+	<div class="wrap">
+		<div class="container">
+			<header class="header">
+	        	<a href="index.html">
+	        		<img src="img/logo.png" class="logo left" alt="Logo">
+	        	</a>
+	        	<div class="lang-switch left">
+	        		<a href="" class="lang-active">рус</a>
+	        		<a href="">eng</a>
+	        	</div>
+	        	<div class="login right">
+	        		<img src="../img/icons/key.png" alt="login" class="login__ico">
+	        		<a href="" class="login__link">Вход для инвесторов</a>
+	        	</div>
+		        <nav class="nav">
+		            <ul class="nav__list dropdown">
+		                <li class="nav__item">
+		                    <a class="nav__link" href="index.html">О нас</a>
+		                </li>
+		                <li class="nav__item">
+		                    <a class="nav__link" href="invest-strategy.html">инвестиционная стратегия</a>
+		                    <ul class="sub_menu">
+		                    	<li>
+		                    		<a href="invest-strategy-mez.html" class="sub_menu__link">Мезонинное финансирование</a>
+		                    	</li>
+		                    	<li>
+		                    		<a href="invest-strategy-direct-invest.html" class="sub_menu__link">Прямые инвестиции</a>
+		                    	</li>
+		                    </ul>
+		                </li>
+		                <li class="nav__item">
+		                    <a class="nav__link" href="clients.html">клиентам</a>
+		                </li>
+		                <li class="nav__item">
+		                    <a class="nav__link" href="investors.html">инвесторам</a>
+		                </li>
+		                <li class="nav__item menu-active">
+		                    <a class="nav__link" href="contacts.html">контакты</a>
+		                    <ul class="sub_menu">
+		                    	<li>
+		                    		<a href="contact-info.html" class="sub_menu__link">Контактная информация</a>
+		                    	</li>
+		                    	<li>
+		                    		<a href="contact-vacancies.html" class="sub_menu__link" disabled>Вакансии</a>
+		                    	</li>
+		                    </ul>
+		                </li>
+		            </ul>
+		        </nav>
+		    </header>
+			<div class="pure-g-r">
+				<div class="pure-u-16-24">
+					<img src="img/content/contact-info.png" alt="">
+					<div class="pure-g-r margin-top-2">
+						<div class="pure-u-24-24">
+							<div class="tab ">
+								<a href="" class="tab__link">Контактная информация</a>
+							</div>
+							<div class="tab tab-active">
+								<a href="" class="tab__link">Вакансии</a>
+							</div>
+						</div>
+					</div>
+					<h3 class="heading-3">вакансии</h3>
+					<p class="p-bordered">Если Вы заинтересованы в карьере в области структурированного финансирования и прямых инвестиций, или Вы – уже профессионал с накопленным опытом, который ищет возможности для расширения своих профессиональных навыков и карьерного роста, пожалуйста, направьте нам свое резюме по электронному адресу: <a href="mailto:recruiting@fmf-capital.com">recruiting@fmf-capital.com</a>, мы обязательно его рассмотрим, и если у нас будет подходящая вакансия, мы с Вами свяжемся.</p>
+					<form action="" class="form margin-bottom-3">
+						<fieldset class="fieldset">
+							<div class="pure-g-r">
+								<div class="margin-bottom-1 block">
+									<div class="pure-u-7-24">
+										<label for="contact" class="label">Контактное лицо:</label>
+									</div>
+									<div class="pure-u-17-24">
+										<input type="text" class="input" id="contact">
+									</div>
+								</div>
+								<div class="margin-bottom-1 block">
+									<div class="pure-u-4-24">
+										<label for="phone" class="label">Телефон:</label>
+									</div>
+									<div class="pure-u-8-24">
+										<input type="text" class="input" id="phone">
+									</div>
+									<div class="pure-u-3-24">
+										<label for="email" class="label padding-left-1">e-mail:</label>
+									</div>
+									<div class="pure-u-9-24">
+										<input type="text" class="input" id="email">
+									</div>
+								</div>
+								<div class="block">
+									<div class="pure-u-5-24">
+										<label for="message" class="label">Сообщение:</label>
+									</div>
+									<div class="pure-u-19-24">
+										<textarea rows="5" type="text" class="textarea" id="message"></textarea>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<div class="block">
+							<div class="pure-u-4-24">
+							</div>
+							<div class="pure-u-19-24 right">
+								<small class="small">Все поля обязательны к заполнению</small>
+								<input type="submit" class="btn right">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="pure-u-8-24 padding-left-3">
+					<div class="world-time">
+						<h1 class="world-time__heading">Мировое время</h1>
+						<div id="clock_london" class="clock_container">
+							<div class="clockHolder">
+								<div class="rotatingWrapper">
+									<img class="hour" src="img/clock/clock_hour.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="min" src="img/clock/clock_min.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="sec" src="img/clock/clock_sec.png">
+								</div>
+								<img class="clock" src="img/clock/clock_face.png" />
+							</div>
+							<div class="lbl">лондон</div>
+						</div>
+						<div id="clock_ny" class="clock_container">
+							<div class="clockHolder">
+								<div class="rotatingWrapper">
+									<img class="hour" src="img/clock/clock_hour.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="min" src="img/clock/clock_min.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="sec" src="img/clock/clock_sec.png">
+								</div>
+								<img class="clock" src="img/clock/clock_face.png" />
+							</div>
+							<div class="lbl">нью-йорк</div>
+						</div>
+						<div id="clock_msk" class="clock_container">
+							<div class="clockHolder">
+								<div class="rotatingWrapper">
+									<img class="hour" src="img/clock/clock_hour.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="min" src="img/clock/clock_min.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="sec" src="img/clock/clock_sec.png">
+								</div>
+								<img class="clock" src="img/clock/clock_face.png" />
+							</div>
+							<div class="lbl">москва</div>
+						</div>
+						<div id="clock_honkong" class="clock_container">
+							<div class="clockHolder">
+								<div class="rotatingWrapper">
+									<img class="hour" src="img/clock/clock_hour.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="min" src="img/clock/clock_min.png">
+								</div>
+								<div class="rotatingWrapper">
+									<img class="sec" src="img/clock/clock_sec.png">
+								</div>
+								<img class="clock" src="img/clock/clock_face.png" />
+							</div>
+							<div class="lbl">гонконг</div>
+						</div>
+					</div>
+					<div class="banner">
+						<div class="banner__img"></div>
+						<p>Узнайте больше о мезонинном финансировании</p>
+						<a href="more.html" class="btn">узнать</a>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<p class="cred">All rights reserved &copy; 2013 FMF</p>
+				<a href="#" class="footer__link">Условия использования информации, размещённой на сайте</a>
+				<a href="#" class="footer__link">Ограничение ответственности</a>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

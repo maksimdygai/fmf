@@ -1,0 +1,528 @@
+@import('nib')
+
+@font-face
+    font-family 'FontAwesome'
+    src url('../fonts/font-awesome/fontawesome-webfont.eot')
+    src url('../fonts/font-awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/font-awesome/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/font-awesome/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/font-awesome/fontawesome-webfont.svg#font-awesome') format('svg')
+    font-weight normal
+    font-style normal
+
+@font-face
+    font-family 'Partner Light'
+    src url('../fonts/partner-light/partner-light.eot')
+    src url('../fonts/partner-light/partner-light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/partner-light/partner-light.woff') format('woff'),
+        url('../fonts/partner-light/partner-light.ttf') format('truetype'),
+        url('../fonts/partner-light/partner-light.svg#partner-light') format('svg')
+    font-weight normal
+    font-style normal
+
+@font-face
+    font-family 'Partner'
+    src url('../fonts/partner-bold/partner-bold.eot')
+    src url('../fonts/partner-bold/partner-bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/partner-bold/partner-bold.woff') format('woff'),
+        url('../fonts/partner-bold/partner-bold.ttf') format('truetype'),
+        url('../fonts/partner-bold/partner-bold.svg#partner-bold') format('svg')
+    font-weight bold
+    font-style normal
+
+body
+    margin 0
+    padding 0
+    font-family Tahoma, Arial, sans-serif
+    font-size 14px
+    line-height 21px
+    color rgb(105,105,107)
+    background rgb(231,231,232)
+    background url(../img/line-bg.png) no-repeat, url(../img/line-bg.png) bottom no-repeat, rgb(231,231,232)
+    background-size 100% 5px, 100% 5px, auto
+.wrap
+    margin 25px 0 40px 0
+.wrap
+    for row in 1 2 3 4 5 6 7 8 9 10
+        .padding-left-{row}
+            padding-left 10px * row
+    for row in 1 2 3 4 5 6 7 8 9 10
+        .padding-right-{row}
+            padding-right 10px * row
+    for row in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+        .padding-top-{row}
+            padding-top 10px * row
+    for row in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+        .padding-bottom-{row}
+            padding-bottom 10px * row
+    for row in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+        .margin-bottom-{row}
+            margin-bottom 10px * row
+    for row in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+        .margin-top-{row}
+            margin-top 10px * row
+
+.container
+    max-width 900px
+    margin 0 auto
+
+*
+    box-sizing border-box
+
+.right
+    float right
+.left
+    float left
+
+a
+    text-decoration none
+    outline none
+    color inherit
+    &[href^="mailto"]
+        color blue
+
+// conditions
+.menu-active
+    color rgb(255,255,255)
+    background rgb(115,207,245)
+.lang-active
+    color rgb(82,172,217)
+
+
+// ELEMENTS
+
+.heading
+    margin 0
+    padding 0 0 10px 0
+    text-transform uppercase
+    font-size 18px
+    color rgb(28,151,212)
+    border-bottom 4px solid rgb(105,105,107)
+
+.heading-2
+    margin 0
+    padding 0 0 10px 0
+    text-transform uppercase
+    font-size 15px
+    color rgb(28,151,212)
+    border-bottom 2px solid rgb(105,105,107)
+
+.heading-3
+    font-size 15px
+    text-transform uppercase
+
+.form
+    clearfix()
+    padding 20px
+    background rgb(244,244,244)
+.fieldset
+    padding 0
+    border none
+.label
+    padding 10px 0 0 0
+    text-transform uppercase
+    font-weight bold
+.input
+.textarea
+    width 100%
+    padding 10px
+    border none
+    border 1px solid rgb(150,150,151)
+    border-radius 10px
+    &:focus
+        outline 0
+.label
+.input
+.textarea
+    display inline-block
+
+.btn 
+    display inline-block
+    padding 8px 18px
+    text-transform uppercase
+    font-weight bold
+    background rgb(217,217,217)
+    border 2px solid rgb(198,199,200)
+    border-radius 12px
+    &:active
+        outline 0
+    &:focus
+        outline 0
+
+.small
+    display inline-block
+    padding 10px 0
+    color rgb(181,181,181)
+
+.logo
+    margin 0 30px 0 0
+.lang-switch
+    text-transform uppercase
+    a
+        display inline-block
+.login
+    &__ico
+        float left
+        margin 0 7px 0 0
+    &__link
+        border-bottom 1px dotted
+.cred
+    margin 0
+    text-transform uppercase
+    font-weight bold
+.tab
+    float left
+    width 50%
+    padding 20px 15px
+    background rgb(255,255,255)
+    border-left 4px solid rgb(192,192,192)
+    border-bottom 4px solid rgb(28,151,212) 
+    &:first-child
+        border-left none
+    &-active
+        color rgb(255,255,255)
+        background rgb(28,151,212)
+        .tab__link
+            border-bottom none
+    &__link
+        text-transform uppercase
+        border-bottom 1px dashed
+
+.img-banner
+    width 100%
+
+.p-bordered
+    padding 0 0 15px 0
+    border-bottom 1px solid
+
+.aside
+    margin 0 0 20px 0
+    padding 0 0 15px 0
+    font-size 12px
+    font-style italic
+    color rgb(170,170,172)
+    border-bottom 1px solid rgb(105, 105, 107)
+
+.left-align
+    text-align left
+
+// BLOCKS
+
+.block
+    width 100%
+
+ul
+    padding 0 20px
+    li
+        padding 0 0 0 5px
+
+.header
+    clearfix()
+    margin 0 0 30px 0
+
+.nav
+    display inline-block
+    float right
+    margin -28px 0 0 0
+    text-transform uppercase
+    &__list
+        list-style none
+        margin 0
+    &__item
+        display inline-block
+        position relative
+        padding 0
+        &:hover
+            color rgb(255,255,255)
+            background rgb(115, 207, 245)
+    &__link
+        display inline-block
+        padding 10px 7.5px
+
+// dropdown
+.sub_menu
+    &__link
+        border-top 1px solid rgb(255,255,255)
+        background rgb(115, 207, 245)
+        &:hover
+            background rgb(28,151,212)
+
+.contact
+    margin 0 0 20px
+    &__item
+        margin 0
+
+.media
+    clearfix()
+    margin 0 0 10px 0
+    padding 20px 0
+    border-bottom 1px solid
+    &:last-child
+        border-bottom none
+    &__body
+        overflow hidden
+    &__heading
+        font-weight normal
+        font-size 1.2em
+        color rgb(102, 204, 204)
+    &__text
+        overflow hidden
+        margin 0 0 15px 0
+        &:last-child
+            margin 0
+    &__img
+        float left
+        margin 0 30px 0 0
+
+.banner
+    margin 0 0 30px 0
+    padding 30px
+    text-align center
+    background rgb(244,244,244)
+    &__img
+        display inline-block
+        width 84px
+        height 94px
+        background url(../img/content/lamp.png)
+    &:hover
+        .banner__img
+            background url(../img/content/lamp-lit.png)
+    p
+        width 52%
+        margin 1em auto
+    
+
+.key-value
+    margin 0 0 30px
+    border-bottom 1px solid
+    &__heading
+        padding 0 0 3px
+        font-size 14px
+        font-weight bold
+        border-bottom 1px solid
+    &__item
+        clearfix()
+        margin 0 0 12px 0
+    &__img
+        float left
+        margin 0 12px 0 0
+    &__key
+        display inline-block
+        padding 7px 0 0 
+        font-weight bold
+        &:after
+            content " \2014 "
+            font-weight normal
+
+.world-time
+    clearfix()
+    margin 0 0 20px
+    border-bottom 1px solid
+    &__heading
+        margin 0 0 10px
+        padding 0 0 3px
+        text-align center
+        font-size 14px
+        text-transform uppercase
+        font-weight normal
+        border-bottom 1px solid
+    &__item
+        margin 0 0 5px
+        float left
+        width 50%
+        text-align center
+    &__name
+        text-transform uppercase
+
+.list
+    display block
+    list-style none
+    margin 0 0 20px 0
+    padding 0
+    &_bordered
+        padding 0 0 15px 0
+        border-bottom 1px solid
+    &__heading
+        margin 0 0 15px 0
+        font-size 15px
+        text-transform uppercase
+    &__item
+        margin 0 0 10px
+        padding 5px 0 0 35px
+        background url("../img/icons/check.png") no-repeat
+        background-position 0 0.4em
+
+.map
+    width 100%
+    height 320px
+    border none
+    border-top 1px solid
+    border-bottom 1px solid
+
+.table
+    width 100%
+    margin 0 0 30px 0
+    font-size 12px
+    border-spacing 0
+    border-collapse collapse
+    thead
+        border-bottom 1px solid rgb(255,255,255)
+    &__row
+        border-bottom 1px solid rgb(255,255,255)
+        &:nth-child(even)
+            background rgb(217,217,217)
+        &:nth-child(odd)
+            background rgb(244,244,244)
+    &__main-col
+        width 28.333333%
+    .bank-credit
+        width 22.222222%
+    .mez-fin
+        width 22.222222%
+    .direct-invest
+        width 22.222222%
+    th
+        font-weight normal
+        color rgb(255,255,255)
+        background rgb(28, 151,212)
+        border-right 1px solid rgb(255,255,255)
+        &:last-child
+            border-right none
+    td
+        text-align center
+        border-right 1px solid rgb(255,255,255)
+        &:first-child
+            padding 10px 20px
+            text-align left
+            color rgb(255,255,255)
+            background rgb(28, 151,212)
+        &:last-child
+            border-right none
+    th, td
+        vertical-align top
+        padding 10px 14px
+    ul
+        margin 0
+    small 
+        display block
+
+.news
+    margin 0 0 20px 0
+    &__date
+        display inline-block
+        margin 0 0 5px 0
+        padding 5px 10px
+        color rgb(255,255,255)
+        background rgb(115,207,245)
+    &__title
+        display block
+        text-decoration underline
+
+.footer
+    padding 30px
+    text-align center
+    background rgb(208,208,210)
+    &__title
+        display block
+        text-decoration underline
+    a
+        display block
+
+
+// SECOND SECTION STYLES
+
+.fmf-body
+    background url(../img/fmf-bg.png)
+    background-position center
+.align-center
+    text-align center
+.content
+    width 430px
+    margin 0 auto
+.round-btn
+    display block
+    width 185px
+    height 185px
+    padding 30px
+    text-align center
+    text-transform uppercase
+    font-weight bold
+    color rgb(25,29,29)
+    background rgb(187,187,187)
+    border-radius 50%
+    transition all .3s ease
+    &:hover
+        color rgb(31,154,214)
+        background rgb(255,255,255)
+        box-shadow 0 0 20px 0 rgba(255,255,255, .8)
+.features
+    padding 20px 0 0 0
+    font-size 11px
+    border-top 1px solid rgb(255,255,255)
+    p
+        margin 0
+        text-transform uppercase
+.fmf-p
+    color rgb(159,159,159)
+.fmf-footer
+    margin 70px 0 0 0
+    text-align center
+    color rgb(255,255,255)
+
+.fmf-invest-body
+    background url(../img/line-bg-fmf.png) center top no-repeat, url(../img/line-bg-fmf.png) center bottom no-repeat, url(../img/fmf-invest-bg.png) center -45px no-repeat
+    background-size 100%, 100%, cover
+
+.round-btn-lg
+    display block
+    width 240px
+    height 240px
+    padding 65px 15px
+    text-align center
+    text-transform uppercase
+    font-weight bold
+    color rgb(25,29,29)
+    border-radius 50%
+
+.family-office
+    background url(../img/family-office.png)
+.direct-invest-mez
+    background url(../img/direct-invest-mez.png) rgb(242,242,242) center
+    background-size 105%
+    box-shadow 0 0 0 1px rgb(180,190,180)
+.border
+    border-bottom 4px solid
+.fmf-invest-footer
+    text-align center
+
+.reader-body
+    background url(../img/reader/dot.png) center
+    background-size 100%
+.r-header
+    clearfix()
+    padding 20px 20px 30px
+    .logo
+        width 280px
+    .login
+        position relative
+        top 50px
+    .login__link
+        display inline-block
+        position relative
+        bottom 10px
+        font-size 12px
+        text-transform uppercase
+        color rgb(160,160,160)
+        border-bottom 1px solid
+
+.fmf-title
+    width 240px
+    margin 30px 0 0
+    padding 20px 5px 0
+    font-size 11px
+    text-align center
+    text-transform uppercase
+    border-top 4px solid
+
+.clearfix
+    clearfix()
